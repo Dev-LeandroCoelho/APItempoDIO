@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  apitempodio:
+    image: apitempodio
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
